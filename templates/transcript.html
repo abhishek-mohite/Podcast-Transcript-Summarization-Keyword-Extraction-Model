@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Podcast Transcript</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        body {
+            background-color:rgb(29, 26, 77);
+            /* background-image: url('https://www.allianz.com.tr/tr_TR/seninle-guzel/podcast-nedir/_jcr_content/root/parsys/wrapper/wrapper/image.img.82.3360.jpeg/1658320132577/shutterstock-1125707303.jpeg'); */
+            background-size: cover;
+        }
+
+        .navbar {
+            background-color: #1d6e8e;
+        }
+
+        .navbar-brand,
+        .nav-link {
+            color: white !important;
+        }
+
+        .card {
+            background-color: rgba(255, 255, 255, 0.866);
+        }
+
+        .card-title {
+            color: #363262;
+        }
+
+        .keyword {
+            font-weight: bold;
+            color: #2b8a3e;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="/">Podcast Summarizer</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Dashboard <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/logout">Log Out</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <center>
+            <h1 style="color: white;">Podcast Transcript</h1>
+        </center>
+        <div class="card mt-4">
+            <div class="card-body">
+                <div class="transcript-text">
+                    {{ transcript_text }}
+                </div>
+                <a href="javascript:history.back()" class="btn btn-primary mt-3">Go Back</a>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.7.0/dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>
